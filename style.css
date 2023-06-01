@@ -868,3 +868,25 @@ footer {
   position: absolute;
   left: 10px;
 }
+.cartDetail-footer{
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+
+}
+.addProduct{
+  padding:10px 20px;
+  color:white;
+  background-color: brown;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.delete{
+  padding:10px 30px;
+  color:white;
+  background-color: brown;
+  border-radius: 20px;
+  border: 2px solid black;
+  margin-left: 100px;
+}
