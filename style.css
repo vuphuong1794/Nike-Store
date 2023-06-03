@@ -888,5 +888,87 @@ footer {
   background-color: brown;
   border-radius: 20px;
   border: 2px solid black;
-  margin-left: 100px;
+  margin-left: 130px;
+}
+
+.closed2 {
+  width: 30px;
+  height: 30px;
+  font-weight: 600;
+  font-size:20px;
+  position: absolute;
+  background-color: white;
+  color: gray;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+.chatDetail{
+  width: 500px;
+  height: 520px;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display:flex;
+  top:100px;
+  right:0;
+  left:0;
+  bottom:0;
+  margin: auto;
+  padding: 10px 50px;
+  display: none;
+  z-index:1;
+  flex-direction: column;
+  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+}
+
+.chatTop{
+  padding: 20px 0 10px;
+  border-bottom: 1.5px solid;
+}
+
+.chatImg{
+  height:60px;
+  width:60px;
+}
+
+.chatTitle{
+  text-decoration: none;
+  display: flex;
+  margin: 5px 0 10px;
+}
+
+.chatItem a{
+  text-decoration: none;
+}
+
+.chatItem i{
+  font-size: 40px;
+  color: black;
+  height: 60px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: bisque;
+}
+
+.product_Status{
+  padding-left: 80px;
+  transform: translateY(-60px);
+}
+
+.biggerChat{
+  position: absolute;
+  right: 50px;
+  transform: translateY(3.5px);
+  cursor:pointer;
+}
+.biggerChat i{
+
 }

@@ -152,3 +152,14 @@ closed.addEventListener("click", () => {
   cartDetail.style.display = "none";
 });
 
+const shopChat = document.querySelector(".shopChat");
+const chatDetail = document.querySelector(".chatDetail");
+const closed2 = document.querySelector(".closed2");
+
+shopChat.addEventListener("click", () => {
+  chatDetail.style.display ="flex";
+});
+
+closed2.addEventListener("click", () => {
+  chatDetail.style.display = "none";
+});
