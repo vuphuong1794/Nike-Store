@@ -453,6 +453,7 @@ label {
   background-color: black;
   color: white;
   font-weight: 600;
+  border:none;
   cursor: pointer;
   border-radius:10px;
   transition-duration: 0.5s;
@@ -464,6 +465,8 @@ label {
   background-color: black;
   color: white;
   font-weight: 600;
+  margin-left:30px;
+  border: none;
   cursor: pointer;
   border-radius:10px;
   transition-duration: 0.5s;
@@ -479,6 +482,9 @@ label {
   color: black;
 }
 
+.productButtons{
+  display: flex;
+}
 .gallery {
   padding: 50px;
   display: flex;
@@ -907,7 +913,7 @@ footer {
 
 .chatDetail{
   width: 500px;
-  height: 520px;
+  height: 650px;
   background-color: white;
   border-radius: 20px;
   position: absolute;
@@ -927,10 +933,16 @@ footer {
 
 .chatTop{
   padding: 20px 0 10px;
-  border-bottom: 1.5px solid;
+  font-size: 20px;
+  border-bottom: 1.5px solid limegreen;
+  font-weight: 900;
+  color: slategray;
 }
 
 .chatImg{
+  margin-left: 70px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
   height:60px;
   width:60px;
 }
@@ -938,6 +950,7 @@ footer {
 .chatTitle{
   text-decoration: none;
   display: flex;
+  font-weight: 600;
   margin: 5px 0 10px;
 }
 
@@ -946,21 +959,22 @@ footer {
 }
 
 .chatItem i{
-  font-size: 40px;
+  font-size: 30px;
   color: black;
-  height: 60px;
+  height: 50px;
   font-weight: 100;
   display: flex;
   align-items: center;
-  width: 60px;
+  width: 50px;
+  border:1px solid lightgray;
   justify-content: center;
   border-radius: 100%;
-  background-color: bisque;
 }
 
 .product_Status{
-  padding-left: 80px;
-  transform: translateY(-60px);
+  padding-left: 70px;
+  transform: translateY(-50px);
+  position: relative;
 }
 
 .biggerChat{
@@ -969,6 +983,58 @@ footer {
   transform: translateY(3.5px);
   cursor:pointer;
 }
-.biggerChat i{
 
+.chatFooter{
+  display: flex;
+  flex-direction: column;
 }
+
+.chatTime{
+  margin: -40px 70px 0;
+  font-weight: 400;
+  font-size: 15px;
+  color: gray;
+}
+
+.message{
+  position: relative;
+}
+
+.detail_message img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.detail_message{
+  display: flex;
+  flex-direction: row;
+}
+
+.shop_name{
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.message_time{
+  position: absolute;
+  right:0;
+}
+
+.shop_content{
+  position: absolute;
+  left: 80px;
+  top: 105px;
+  bottom: -1px;
+  border-bottom: 1px solid gray;
+}
+
+.message_title{
+  margin: 20px 0;
+  border-top: 1px solid gray;
+  padding: 20px 0 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+

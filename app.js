@@ -163,3 +163,4 @@ shopChat.addEventListener("click", () => {
 closed2.addEventListener("click", () => {
   chatDetail.style.display = "none";
 });
+
