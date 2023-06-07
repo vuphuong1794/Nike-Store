@@ -164,3 +164,15 @@ closed2.addEventListener("click", () => {
   chatDetail.style.display = "none";
 });
 
+const help_icon = document.querySelector(".help_icon");
+const user_help = document.querySelector(".user_help");
+const closed3 = document.querySelector(".closed3");
+
+help_icon.addEventListener("click", () => {
+  user_help.style.display = "flex";
+});
+
+closed3.addEventListener("click", () => {
+  user_help.style.display = "none";
+});
+
