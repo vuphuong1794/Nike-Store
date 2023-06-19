@@ -176,3 +176,14 @@ closed3.addEventListener("click", () => {
   user_help.style.display = "none";
 });
 
+const user_icon = document.querySelector(".user_icon");
+const user_side = document.querySelector(".user_side");
+const closed4 = document.querySelector(".closed4");
+
+user_icon.addEventListener("click", () => {
+  user_side.style.display = "flex";
+});
+
+closed4.addEventListener("click", () => {
+  user_side.style.display = "none";
+});
