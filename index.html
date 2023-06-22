@@ -10,6 +10,77 @@
 </head>
 
 <body>
+    <nav class="sideBar">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="image/dai dien.jpg" alt="logo">
+                </span>
+
+                <div class="text header-text">
+                    <span class="name">David Vu</span>
+                    <span class="profession">web developer</span>
+
+                </div>
+            </div>
+                <i class='bx bx-chevron-right toogle' id="closed5" ></i>
+        </header>
+        <div class="menu-bar">
+            <div class="menu">
+                <li class="search-box">
+                    <i class='bx bx-search icon' ></i>
+                    <input type="search" placeholder="Search. . .">
+                </li>
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="#" class="nav-link">
+                            <i class='bx bx-home icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon' ></i>
+                            <span class="text nav-text">Revenue</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-bell icon' ></i>
+                            <span class="text nav-text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-store-alt icon'></i>
+                            <select class="brand-option" onchange="redirectToSelectedPage(this)">
+                                <option value="">Other Brand</option>
+                                <option value="https://www.adidas.com.vn/en?cm_mmc=AdieSEM_Google-_-adidas-SEAPAC-eCom-PPC-B-Brand-Other-Exact-VN_EN-SEAPAC-eCom-Paid_Search-_-B-Other-Exact-EN-_-adidas-_-dv%3AeCom&cm_mmc1=VN&cm_mmc2=e&gclid=Cj0KCQjw4s-kBhDqARIsAN-ipH0S8fO-OXHYZLBVNiDNfyeUt07B_uKEsB0nFlyf2WOSP0aE3BXem8MaAoZtEALw_wcB&gclsrc=aw.ds">
+                                    Adidas
+                                </option>
+                                <option value="https://us.puma.com/">
+                                    Puma
+                                </option>
+                                <option value="https://www.gucci.com/au/en_au/?utm_medium=geolocation&utm_source=gucci-WW&utm_campaign=page">
+                                    Gucci
+                                </option>
+                            </select>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-home icon' ></i>
+                            <span class="text nav-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Log out</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <nav class="nav">
         <div class="navTop">
             <div class="navItem">
@@ -19,7 +90,7 @@
             <div class="navItem">
                 <div class="search">
                     <i class='bx bx-search'></i>
-                    <input type="text" placeholder="Search" class="searchInput">
+                    <input type="text" placeholder="Search. . ." class="searchInput">
                 </div>
             </div>
             <div class="navItem">
@@ -128,6 +199,7 @@
                  Rest and relax. Eat right. Smile. Portray positive. Enjoy life. Care for others. Tell yourself you can do this.”</p>
             <div class="colors">
                 <h3>Color: </h3>
+                <div class="color"></div>
                 <div class="color"></div>
                 <div class="color"></div>
             </div>
@@ -350,7 +422,7 @@
                     <span>Tin nhắn</span>
                 </div>
                 <div class="detail_message">
-                    <img src="https://scontent.fsgn5-12.fna.fbcdn.net/v/t39.30808-6/346969797_1109826347074687_471620209816091664_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=MliX3U6n9yUAX9cBuW-&_nc_ht=scontent.fsgn5-12.fna&oh=00_AfCiyrkqnXRJYVMrLQML-po196R1leZ_4JLsIv8G5ZEFOQ&oe=648112AD" alt="">
+                    <img src="image/dai dien.jpg" alt="">
                     <span class="shop_name">Nike Store</span>
                     <span class="message_time">5-3</span>
                 </div>
@@ -430,6 +502,7 @@
                 <span>Đơn Mua</span>
             </div>
         </div>
+        
     </footer>
     <script src="./app.js"></script>
 </body>

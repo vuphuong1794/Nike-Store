@@ -187,3 +187,25 @@ user_icon.addEventListener("click", () => {
 closed4.addEventListener("click", () => {
   user_side.style.display = "none";
 });
+
+const menu_icon = document.querySelector(".menu_icon");
+const sidebar = document.querySelector(".sidebar");
+const closed5 = document.querySelector("#closed5");
+
+menu_icon.addEventListener("click", () => {
+ sidebar.style.display = "block";
+});
+
+closed5.addEventListener("click", () => {
+  sidebar.style.display="none";
+});
+
+function redirectToSelectedPage(selectElement) {
+  var selectedOption = selectElement.options[selectElement.selectedIndex];
+  var url = selectedOption.value;
+  window.location.href = url;
+}
+
+
+
+
