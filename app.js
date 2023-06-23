@@ -192,12 +192,21 @@ const menu_icon = document.querySelector(".menu_icon");
 const sidebar = document.querySelector(".sidebar");
 const closed5 = document.querySelector("#closed5");
 
+let isSidebarOpen = false; // Thêm biến để theo dõi trạng thái mở/closed của sidebar
+
 menu_icon.addEventListener("click", () => {
- sidebar.style.display = "block";
+  if (isSidebarOpen) {
+    sidebar.style.display = "none"; // Đóng sidebar nếu nó đang mở
+    isSidebarOpen = false;
+  } else {
+    sidebar.style.display = "block"; // Mở sidebar nếu nó đang đóng
+    isSidebarOpen = true;
+  }
 });
 
 closed5.addEventListener("click", () => {
-  sidebar.style.display="none";
+  sidebar.style.display = "none";
+  isSidebarOpen = false; // Đặt trạng thái sidebar thành closed khi nhấp vào closed5
 });
 
 function redirectToSelectedPage(selectElement) {
