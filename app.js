@@ -1,6 +1,7 @@
 const wrapper = document.querySelector(".sliderWrapper");
 const menuItems = document.querySelectorAll(".menuItem");
 
+
 const products = [
   {
     id: 1,
@@ -214,6 +215,10 @@ function redirectToSelectedPage(selectElement) {
   var url = selectedOption.value;
   window.location.href = url;
 }
+
+const nextIcon = document.querySelector(".nextIcon");
+const backIcon = document.querySelector(".backIcon");
+const product = document.querySelector(".product");
 
 
 

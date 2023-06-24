@@ -124,9 +124,13 @@ header .image-text .header-text{
   color: var(--text-color);
 }
 
+.search .search_icon{
+  margin-right:10px;
+}
 .sidebar li .icon,
 .sidebar li .text{
   color: var(--text-color);
+  position: relative;
 }
 
 .sidebar li a{
@@ -157,7 +161,7 @@ header .image-text .header-text{
   outline: none;
   border: none;
   color: var(--text-color);
-  left: 75px;
+  left: 53px;
   padding: 15px;
 }
 
@@ -195,8 +199,8 @@ nav {
 }
 
 .navItem:first-child{
-  margin:10px 20px;
-  display:flex;
+  display: flex;
+  transform: translate(50px, 10px);
   cursor: none;
 }
 
@@ -228,10 +232,10 @@ nav {
 }
 
 .navItem .logo-img{
-    height: 125px;
-    margin-left: -209px;
-    width: 340px;
-    transform: translateY(6px);
+  height: 135px;
+  margin-left: -245px;
+  width: 400px;
+  transform: translateY(7px);
 }
 .search {
   display: flex;
@@ -271,10 +275,10 @@ nav {
   transition:0.3s;
 }
 .navBottom {
-    display: flex;
-    margin: -20px 0 10px 0;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  margin: -20px 0 10px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .menuItem {
@@ -359,7 +363,7 @@ nav {
   font-weight: 300;
   text-align: center;
   color: white;
-  border: 2px solid black;
+  border: 2px solid ;
   z-index: 1;
 }
 
@@ -587,7 +591,7 @@ label {
 .productDesc {
   font-style: 24px;
   margin:10px 0;
-  color: gray;
+  color: lightgray;
 }
 
 .productDetails h3{
@@ -751,12 +755,12 @@ footer {
 }
 
 .fButton {
-    padding: 15px;
-    background-color: black;
-    color: white;
-    border-radius: 20px;
-    margin-left: -3rem;
-    cursor: pointer;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  margin-left: -3rem;
+  cursor: pointer;
 }
 
 .fIcons{
@@ -916,7 +920,7 @@ footer {
 .cartDetail{
   width: 500px;
   height: 520px;
-  background-color: white;
+  background-color: wheat;
   border-radius: 20px;
   position: absolute;
   display:flex;
@@ -931,7 +935,6 @@ footer {
   top: 80px;
   z-index:1;
   flex-direction: column;
-  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -941,7 +944,7 @@ footer {
   font-weight: 600;
   font-size:20px;
   position: absolute;
-  background-color: white;
+  background-color: wheat;
   color: gray;
   top: 10px;
   right: 10px;
@@ -1105,7 +1108,6 @@ footer {
   top:80px;
   z-index:1;
   flex-direction: column;
-  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -1218,7 +1220,7 @@ footer {
 .user_help{
   width: 500px;
   height: 520px;
-  background-color: white;
+  background-color: floralwhite;
   border-radius: 20px;
   position: absolute;
   display:flex;
@@ -1233,7 +1235,6 @@ footer {
   top: 80px;
   z-index:1;
   flex-direction: column;
-  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -1422,7 +1423,6 @@ footer {
   position: fixed;
   top:80px;
   flex-direction: column;
-  -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -1468,8 +1468,9 @@ footer {
 }
 
 .user_detail-infos img{
-  height:60px;
-  width:60px;
+  height:70px;
+  width:70px;
+  border: 2px solid blueviolet;
   border-radius:50px;
 
 }
@@ -1522,5 +1523,12 @@ footer {
 
 .options{
   display: flex;
-  flex-direction: column;
+  flex-direction: rows;
+  margin-top:12px 0 12px 0;
+  border-bottom: 2px solid gray;
+  justify-content: space-around;
+}
+
+.user_option .icon3{
+  color: var(--text-color);
 }
