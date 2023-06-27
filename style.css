@@ -38,6 +38,7 @@ body {
 .menu-links li:hover{
   background: lightgray;
 }
+
 .sidebar{
   position: fixed;
   display: block;
@@ -49,7 +50,6 @@ body {
   display: none;
   width:250px;
   background: var(--sidebar-color);
-  
 }
 
 .sidebar header{
@@ -80,7 +80,6 @@ body {
 header .image-text .header-text{
   display: flex;
   flex-direction: column;
-
 }
 
 .header-text .name{
@@ -127,6 +126,7 @@ header .image-text .header-text{
 .search .search_icon{
   margin-right:10px;
 }
+
 .sidebar li .icon,
 .sidebar li .text{
   color: var(--text-color);
@@ -138,7 +138,6 @@ header .image-text .header-text{
   display: flex;
   align-items: center;
   text-decoration: none;
-
 }
 
 .sidebar .search-box{
@@ -219,10 +218,12 @@ nav {
 .navItem:last-child a{
   text-decoration: none;
 }
+
 .navItem:last-child i:hover{
   color:yellow;
   transition-duration: 0.3s;
 }
+
 .navItem .logo{
   font-weight: 900;
   font-size: 35px;
@@ -233,10 +234,11 @@ nav {
 
 .navItem .logo-img{
   height: 135px;
-  margin-left: -245px;
+  margin-left: -233px;
   width: 400px;
-  transform: translateY(7px);
+  transform: translateY(3px);
 }
+
 .search {
   display: flex;
   align-items: center;
@@ -1524,11 +1526,15 @@ footer {
 .options{
   display: flex;
   flex-direction: rows;
-  margin-top:12px 0 12px 0;
+  margin: 12px 0;
   border-bottom: 2px solid gray;
   justify-content: space-around;
 }
 
 .user_option .icon3{
   color: var(--text-color);
+}
+
+.author{
+  left: -90px;
 }
